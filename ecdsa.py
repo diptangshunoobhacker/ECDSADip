@@ -48,7 +48,7 @@ import random
 privateKey = random.getrandbits(256)
 publicKey = applyDoubleAndAddMethod(base, privateKey, a, d, p)
 print("public key: ", publicKey)
-message = textToInt("hi")
+message = textToInt("ECDSA Code by me.")
 def hashing(message):
 	import hashlib
 	return int(hashlib.sha512(str(message).encode("utf-8")).hexdigest(), 16)
